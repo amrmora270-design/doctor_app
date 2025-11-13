@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Doctor Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Roboto", "sans-serif"],
+                    },
+                    colors: {
+                        'brand-purple-start': '#470d9d',
+                        'brand-purple-end': '#907ffc',
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gradient-to-b from-brand-purple-start to-brand-purple-end font-sans">
+<div class="max-w-md mx-auto">
+<header class="sticky top-0 z-10 py-4 px-4 flex items-center justify-between bg-brand-purple-start/80 backdrop-blur-sm">
+<button class="text-white">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-semibold text-white">Doctor Profile</h1>
+<div class="flex items-center gap-2">
+<button class="text-white">
+<span class="material-icons">flag</span>
+</button>
+<button class="text-white">
+<span class="material-icons">more_horiz</span>
+</button>
+</div>
+</header>
+<main class="pb-24">
+<section class="text-center pt-6 pb-8 px-4">
+<div class="relative inline-block">
+<img alt="Profile picture of Dr. Ethan Carter" class="w-28 h-28 rounded-full object-cover border-4 border-white shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1nAg8QTbjqUE64HNInSP-6znMR4Kt-m8yRT6n25pPU8e5THbtj8ewe-75SbI5s4FUPYYr3BlszsW5XD444Gy4oCQs1rytRXQwHkzM0FyNPqACQB7tynYngaMlyKU-JBRSQmkr12g1_EOT6YVhhNGaWgA6rQtMjus_0ajvaFUDScwX3JOTHsNovs1MXNDQZ-vTpOEie9_nul5rlW_rDOwiLq5oLRqPTvr0ErKjFh2q6Q5zWsf5VKVnvNY04tu4XeyN-KGtbPiqbHE"/>
+<div class="absolute bottom-1 right-1 bg-green-500 rounded-full h-6 w-6 flex items-center justify-center border-2 border-white">
+<span class="material-icons text-white text-base">check</span>
+</div>
+</div>
+<h2 class="text-2xl font-bold mt-4 text-white">Dr. Ethan Carter</h2>
+<p class="text-white/80 mt-1">MBBS, DOMS, MS - Ophthalmology</p>
+<p class="text-white/80 mt-2">Cardiologist</p>
+<p class="text-white/80">Fayoum / Qasr El-Basel</p>
+</section>
+<div class="px-4 space-y-6">
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-3">Biography</h3>
+<p class="text-gray-600 leading-relaxed text-sm">
+                        Dr. Ethan Carter is a dedicated and compassionate cardiologist with over five years of experience in diagnosing and treating a wide range of cardiovascular diseases. He completed his medical degree at a prestigious university and specialized in cardiology during his residency. Dr. Carter is known for his patient-centered approach, ensuring that each individual receives personalized care and a thorough understanding of their condition. He is committed to staying abreast of the latest advancements in cardiology to provide the best possible outcomes for his patients.
+                    </p>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-4">Clinics</h3>
+<div class="space-y-4">
+<div class="p-4 rounded-lg bg-gray-50 border border-gray-200">
+<p class="font-semibold text-gray-800">City General Hospital</p>
+<p class="text-sm text-gray-500 mt-1">456 Wellness Ave, Medcity, USA</p>
+</div>
+<div class="p-4 rounded-lg bg-gray-50 border border-gray-200">
+<p class="font-semibold text-gray-800">Heartbeat Cardiology Center</p>
+<p class="text-sm text-gray-500 mt-1">789 Cardio Rd, Healthville, USA</p>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-4">Contact</h3>
+<div class="space-y-4">
+<div class="flex items-center">
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+<span class="material-icons text-brand-purple-start">phone</span>
+</div>
+<div>
+<p class="text-gray-500 text-sm">Phone</p>
+<p class="text-gray-800 font-medium">+1-555-123-4567</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+<span class="material-icons text-brand-purple-start">message</span>
+</div>
+<div>
+<p class="text-gray-500 text-sm">WhatsApp</p>
+<p class="text-gray-800 font-medium">+1-555-987-6543</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="bg-purple-100 p-3 rounded-full mr-4">
+<span class="material-icons text-brand-purple-start">location_on</span>
+</div>
+<div>
+<p class="text-gray-500 text-sm">Address</p>
+<p class="text-gray-800 font-medium">123 Health St, Medville, USA</p>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-bold text-gray-800 mb-4">Social Media</h3>
+<div class="space-y-4">
+<div class="flex items-center py-4 border-b border-gray-100">
+<svg class="w-6 h-6 text-brand-purple-start mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"></path>
+</svg>
+<a class="text-gray-800 text-sm flex-1" href="#">facebook.com/drethancarter</a>
+<span class="material-icons text-gray-400 ml-4 cursor-pointer">content_copy</span>
+</div>
+<div class="flex items-center py-4 border-b border-gray-100">
+<svg class="w-6 h-6 text-brand-purple-start mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+<path d="M16 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" fill="currentColor" stroke="none"></path>
+</svg>
+<a class="text-gray-800 text-sm flex-1" href="#">@drethancarter.cardio</a>
+<span class="material-icons text-gray-400 ml-4 cursor-pointer">content_copy</span>
+</div>
+<div class="flex items-center py-4 border-b border-gray-100">
+<svg class="w-6 h-6 text-brand-purple-start mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+<polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+</svg>
+<a class="text-gray-800 text-sm flex-1" href="#">Dr. Ethan Carter Channel</a>
+<span class="material-icons text-gray-400 ml-4 cursor-pointer">content_copy</span>
+</div>
+<div class="flex items-center py-4">
+<svg class="w-6 h-6 text-brand-purple-start mr-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"></path>
+<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"></path>
+</svg>
+<a class="text-gray-800 text-sm flex-1" href="#">www.drethancarter.com</a>
+<span class="material-icons text-gray-400 ml-4 cursor-pointer">content_copy</span>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-3">Clinic Location</h3>
+<img alt="Map showing clinic location" class="rounded-lg w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC__SWChlnteLnk5T67XXrQnwnXg6e6xCgbQnMQtQ0IKMVTP6xSWscvR4Ih_aUb3otnZo3fU_nl70JwAy92it8rvBIYTc3_VXlTfwPKIwBpBYcxodhSBoMtharuvpyLMqKK4WvzPlMiwTw3Ni8XKTS6I23agkSiFvVFfYChFGlpAKZDJj6zqNAWIKD4z4HGscGJ6IHBwlFVkZAzYeYYNolW1hcdVxGja-ZRFBZBMW8uOXGXv1fVmjOZYMd6Oa7xz399faxtOxkwUoQ"/>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-4">Working Hours</h3>
+<div class="space-y-3 text-gray-600">
+<div class="flex justify-between items-center text-sm">
+<p>Monday</p>
+<p class="font-medium text-gray-800">9:00 AM - 5:00 PM</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Tuesday</p>
+<p class="font-medium text-gray-800">9:00 AM - 5:00 PM</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Wednesday</p>
+<p class="font-medium text-gray-800">9:00 AM - 1:00 PM</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Thursday</p>
+<p class="font-medium text-gray-800">9:00 AM - 5:00 PM</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Friday</p>
+<p class="font-medium text-gray-800">9:00 AM - 5:00 PM</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Saturday</p>
+<p class="text-red-500 font-medium">Closed</p>
+</div>
+<div class="flex justify-between items-center text-sm">
+<p>Sunday</p>
+<p class="text-red-500 font-medium">Closed</p>
+</div>
+</div>
+</section>
+<section class="bg-white rounded-2xl p-5 shadow-lg">
+<h3 class="text-lg font-semibold text-gray-800 mb-4">Reviews</h3>
+<div class="flex items-start gap-6 mb-6">
+<div class="text-center">
+<p class="text-5xl font-bold text-gray-900">4.8</p>
+<div class="flex text-yellow-500 mt-1">
+<span class="material-icons text-base">star</span>
+<span class="material-icons text-base">star</span>
+<span class="material-icons text-base">star</span>
+<span class="material-icons text-base">star</span>
+<span class="material-icons text-base">star_half</span>
+</div>
+<p class="text-xs text-gray-500 mt-1">125 reviews</p>
+</div>
+<div class="flex-1 space-y-1.5 text-xs text-gray-500">
+<div class="flex items-center gap-2">
+<span>5</span>
+<div class="w-full bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 70%"></div>
+</div>
+<span>70%</span>
+</div>
+<div class="flex items-center gap-2">
+<span>4</span>
+<div class="w-full bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 20%"></div>
+</div>
+<span>20%</span>
+</div>
+<div class="flex items-center gap-2">
+<span>3</span>
+<div class="w-full bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 5%"></div>
+</div>
+<span>5%</span>
+</div>
+<div class="flex items-center gap-2">
+<span>2</span>
+<div class="w-full bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 3%"></div>
+</div>
+<span>3%</span>
+</div>
+<div class="flex items-center gap-2">
+<span>1</span>
+<div class="w-full bg-gray-200 rounded-full h-1.5">
+<div class="bg-yellow-500 h-1.5 rounded-full" style="width: 2%"></div>
+</div>
+<span>2%</span>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<img alt="Profile picture of Liam Harper" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxyngslhxxc8AzUKUf-aNJL_e7jwIVbg9soz7S2uJsxiAj4OFCQDY7Xshuxro-kj-wivv4NSmEpvqFHT23NS7WdMzuc6fOJRSwAJOCsgu8r90HLzAjpWoq9eJu970zVVeSfqvQGVhOx8yL3WoWmlXHwIfOy3duO3p2ur3GcoBUj6sSCZAeLnMvDUTM54FZRR46_KZIXh7JS7bHDy_S_Be4d82rWNn5myv93477g_g9UDptKGOUsqx2PMNUgqyXtZa4_09MrvT6wlc"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-gray-800">Liam Harper</p>
+<p class="text-xs text-gray-400">2 weeks ago</p>
+</div>
+<div class="flex text-yellow-500 my-1">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+                                    Dr. Carter is an excellent cardiologist. He is very knowledgeable and takes the time to explain everything clearly. I highly recommend him.
+                                </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<img alt="Profile picture of Olivia Bennett" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVd6acx3dmbznTEoQFls5gt97r09SRL8_wgSRqG4NkTDLWh2tfa-NUX4cxtVxnN2DTgtKSQkmgFN27SBsyNJhreaX13AV10ofG1pE6aebo5B65AvH7HBT_pRYqy-xBeTFP25eaKCmjHJV_eryeW4EYTLqm7q32u5okEjLDZZRWpOzEXkFERchMty6UBE_WXRSptH51oYgVYhBsUnVdpaTk13mI1N8bJXW8yk6TJrHEDpKxmW8VDm7nQWnYOT5lnXOeDLdp6vNFhdQ"/>
+<div class="flex-1">
+<div class="flex justify-between items-baseline">
+<p class="font-semibold text-gray-800">Olivia Bennett</p>
+<p class="text-xs text-gray-400">1 month ago</p>
+</div>
+<div class="flex text-yellow-500 my-1">
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm">star</span>
+<span class="material-icons text-sm text-gray-300">star_border</span>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+                                    Dr. Carter is a good doctor, but the waiting time at the clinic was a bit long. Overall, a positive experience.
+                                </p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<button class="w-full py-3 px-4 bg-purple-50 text-brand-purple-start font-semibold rounded-lg hover:bg-purple-100 transition-colors">
+                            View All Reviews
+                        </button>
+</div>
+</section>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white/90 backdrop-blur-sm shadow-[0_-1px_10px_rgba(0,0,0,0.05)] border-t border-gray-200">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-gray-500 w-full pt-1" href="#">
+<span class="material-icons">home</span>
+<span class="text-xs mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 w-full pt-1" href="#">
+<span class="material-icons">article</span>
+<span class="text-xs mt-1">News</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 w-full pt-1" href="#">
+<span class="material-icons">search</span>
+<span class="text-xs mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-gray-500 w-full pt-1" href="#">
+<span class="material-icons">favorite_border</span>
+<span class="text-xs mt-1">Favorite</span>
+</a>
+<a class="flex flex-col items-center justify-center text-brand-purple-start w-full pt-1" href="#">
+<span class="material-icons">person</span>
+<span class="text-xs mt-1 font-semibold">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>
