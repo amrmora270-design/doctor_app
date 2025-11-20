@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4a0da5",
+              "background-light": "#f7f6f8",
+              "background-dark": "#171022",
+            },
+            fontFamily: {
+              "display": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            @apply font-display bg-gradient-to-b from-[#470d9d] to-[#907ffc];
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display group/design-root overflow-x-hidden">
+<header class="p-6 pt-12">
+<h1 class="text-white text-4xl font-bold">Settings</h1>
+</header>
+<main class="flex flex-col gap-4 p-6">
+
+  <!-- Personal Preferences -->
+  <a href="personal_preferences.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">tune</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      Personal Preferences
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Notifications -->
+  <a href="notifications_settings.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">notifications</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      Notifications
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Security and Login -->
+  <a href="security_login.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">lock</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      Security and Login
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Privacy -->
+  <a href="privacy_settings.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">visibility</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      Privacy
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Help and Support -->
+  <a href="help_support.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">help</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      Help and Support
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- About the App -->
+  <a href="about.html"
+     class="flex cursor-pointer items-center gap-4 rounded-xl bg-white/20 p-4 shadow-lg backdrop-blur-sm transition-transform active:scale-95">
+    <div class="flex size-10 shrink-0 items-center justify-center rounded-lg bg-white/30 text-white">
+      <span class="material-symbols-outlined text-2xl">info</span>
+    </div>
+    <p class="flex-1 truncate text-base font-normal leading-normal text-white">
+      About the App
+    </p>
+    <div class="shrink-0">
+      <div class="flex size-7 items-center justify-center text-white">
+        <span class="material-symbols-outlined text-2xl">arrow_forward_ios</span>
+      </div>
+    </div>
+  </a>
+
+</main>
+<br><br>
+</div>
+<!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-sm bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] rounded-t-2xl">
+      <div class="flex justify-around items-center h-16">
+        <a href="home.html" class="flex flex-col items-center justify-center text-[#470d9d] font-semibold">
+          <span class="material-symbols-outlined filled">home</span>
+          <span class="text-xs mt-1">Home</span>
+        </a>
+        <a href="news.html" class="flex flex-col items-center justify-center text-gray-400 hover:text-[#470d9d]">
+          <span class="material-symbols-outlined">article</span>
+          <span class="text-xs mt-1">News</span>
+        </a>
+        <a href="search.html" class="flex flex-col items-center justify-center text-gray-400 hover:text-[#470d9d]">
+          <span class="material-symbols-outlined">search</span>
+          <span class="text-xs mt-1">Search</span>
+        </a>
+        <a href="favorite.html" class="flex flex-col items-center justify-center text-gray-400 hover:text-[#470d9d]">
+          <span class="material-symbols-outlined">favorite_border</span>
+          <span class="text-xs mt-1">Favorite</span>
+        </a>
+        <a href="profile.html" class="flex flex-col items-center justify-center text-gray-400 hover:text-[#470d9d]">
+          <span class="material-symbols-outlined">person</span>
+          <span class="text-xs mt-1">Profile</span>
+        </a>
+      </div>
+
+    </nav>
+</body></html>

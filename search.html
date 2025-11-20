@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Advanced Filters - Doctors Directory</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<style type="text/tailwindcss">
+        :root {
+            --purple-start: #470d9d;
+            --purple-end: #907ffc;
+            --purple-accent: #6d28d9;
+        }
+        .custom-range::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 1.25rem;
+            height: 1.25rem;
+            background: var(--purple-accent);
+            border-radius: 9999px;
+            cursor: pointer;
+            margin-top: -6px;
+            box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--purple-accent);
+        }
+        .custom-range::-moz-range-thumb {
+            width: 1.25rem;
+            height: 1.25rem;
+            background: var(--purple-accent);
+            border-radius: 9999px;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 0 4px #fff, 0 0 0 5px var(--purple-accent);
+        }
+        input[type="checkbox"]:checked, input[type="radio"]:checked {
+            background-color: var(--purple-accent);
+            border-color: var(--purple-accent);
+        }
+        input[type="checkbox"]:checked:hover, input[type="radio"]:checked:hover {
+            background-color: var(--purple-accent);
+            border-color: var(--purple-accent);
+        }
+        .custom-toggle:checked {
+            background-color: var(--purple-accent);
+            border-color: var(--purple-accent);
+        }
+        .chip-active {
+            background-color: var(--purple-accent);
+            color: white;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ["Roboto", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gradient-to-b from-[var(--purple-start)] to-[var(--purple-end)] font-sans">
+<div class="max-w-md mx-auto p-4 flex flex-col min-h-screen">
+<header class="flex items-center justify-between text-white py-2 mb-4">
+<button 
+onclick="window.location.href='home.html'"
+class="p-2">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold">Advanced Filters</h1>
+<button
+onclick="location.reload()"
+ class="p-2 text-white font-medium text-base">Reset</button>
+</header>
+<main 
+ 
+class="flex-grow space-y-4">
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-gray-100 text-gray-800 border-transparent rounded-full focus:ring-2 focus:ring-[var(--purple-accent)] focus:border-transparent" placeholder="Search by name, specialization..." type="text"/>
+</div>
+</div>
+<!--قائمة التخصصات-->
+<div class="mt-4">
+
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg"><h2 class="text-lg font-semibold text-gray-900 mb-3">Specialties</h2>
+<div class="flex items-center space-x-2 overflow-x-auto pb-1  -mx-4 px-4">
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium chip-active">Cardiology</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">Pediatrics</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">OB-GYN</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">Neurology</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">Pediatrics</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">قلب</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">رمد</button>
+<button class="specialty-btn  flex-shrink-0 px-4 py-2 rounded-full bg-gray-100 text-gray-600 text-sm font-medium">مخ و اعصاب</button>
+</div></div>
+</div>
+<div class="space-y-4">
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<h2 class="text-lg font-semibold text-gray-900 mb-3">Location</h2>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">location_on</span>
+<select class="w-full pl-10 pr-4 py-3 bg-gray-100 border-transparent rounded-xl text-gray-800 focus:ring-2 focus:ring-[var(--purple-accent)] focus:border-transparent"
+onchange="handleLocationChange(this)">
+<option>Qasr El Basal, Faiyum</option>
+<option  value="another" >    Another Location</option>
+</select>
+</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<h2 class="text-lg font-semibold text-gray-900 mb-3">Degree</h2>
+<div class="grid grid-cols-2 gap-x-4 gap-y-3">
+<label class="flex items-center space-x-3 text-gray-800">
+<input checked="" class="h-5 w-5 rounded-md border-gray-300 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)]" type="checkbox"/>
+<span>MD</span>
+</label>
+<label class="flex items-center space-x-3 text-gray-800">
+<input class="h-5 w-5 rounded-md border-gray-300 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)]" type="checkbox"/>
+<span>PhD</span>
+</label>
+<label class="flex items-center space-x-3 text-gray-800">
+<input checked="" class="h-5 w-5 rounded-md border-gray-300 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)]" type="checkbox"/>
+<span>DD</span>
+</label>
+<label class="flex items-center space-x-3 text-gray-800">
+<input class="h-5 w-5 rounded-md border-gray-300 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)]" type="checkbox"/>
+<span>DDS</span>
+</label>
+</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<h2 class="text-lg font-semibold text-gray-900 mb-3">Gender</h2>
+<div class="flex items-center space-x-8">
+<label class="flex items-center space-x-2 text-gray-800">
+<input class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="gender" type="radio"/>
+<span>Male</span>
+</label>
+<label class="flex items-center space-x-2 text-gray-800">
+<input class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="gender" type="radio"/>
+<span>Female</span>
+</label>
+<label class="flex items-center space-x-2 text-gray-800">
+<input checked="" class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="gender" type="radio"/>
+<span>Both</span>
+</label>
+</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<h2 class="text-lg font-semibold text-gray-900 mb-2">Consultation Fee</h2>
+<div class="relative pt-4">
+<input class="w-full h-1.5 bg-gray-200 rounded-full appearance-none cursor-pointer custom-range" max="500" min="50" type="range" value="300"/>
+</div>
+<p class="text-center mt-2 text-gray-600 font-medium">50 – 500 EGP</p>
+</div>
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<h2 class="text-lg font-semibold text-gray-900 mb-3">Rating</h2>
+<div class="flex items-center space-x-8">
+<label class="flex items-center space-x-2 text-gray-800">
+<input checked="" class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="rating" type="radio"/>
+<span>4.5+</span>
+</label>
+<label class="flex items-center space-x-2 text-gray-800">
+<input class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="rating" type="radio"/>
+<span>4.0+</span>
+</label>
+<label class="flex items-center space-x-2 text-gray-800">
+<input class="h-5 w-5 text-[var(--purple-accent)] focus:ring-[var(--purple-accent)] border-gray-300" name="rating" type="radio"/>
+<span>3.5+</span>
+</label>
+</div>
+</div>
+<div class="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
+<div class="flex items-center justify-between">
+<span class="text-lg font-semibold text-gray-900">Available Today</span>
+<label class="inline-flex relative items-center cursor-pointer" for="availability-toggle">
+<input checked="" class="sr-only peer custom-toggle" id="availability-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
+</label>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 py-4 bg-gradient-to-t from-[var(--purple-end)] to-transparent -mx-4 px-4">
+<button 
+ onclick="window.location.href='Search_results.html'"
+class="w-full text-white font-bold text-lg py-4 rounded-full bg-gradient-to-r from-[var(--purple-start)] to-[var(--purple-end)] hover:opacity-90 transition-opacity shadow-lg shadow-purple-500/50">
+                Apply Filters
+            </button>
+</footer>
+</div>
+<script>
+        const slider = document.querySelector('.custom-range');
+        function updateSliderBackground() {
+            const value = (slider.value - slider.min) / (slider.max - slider.min) * 100;
+            slider.style.background = `linear-gradient(to right, #6d28d9 0%, #6d28d9 ${value}%, #e5e7eb ${value}%, #e5e7eb 100%)`;
+        }
+        slider.addEventListener('input', updateSliderBackground);
+        // Initial call to set the background
+        updateSliderBackground();
+    </script>
+<script>
+  function handleLocationChange(selectEl) {
+    if (selectEl.value === 'another') {
+      window.location.href = 'current_location.html';
+    }
+  }
+</script>
+
+</body></html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Review Submitted</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5b13ec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#161022",
+          },
+          fontFamily: {
+            "display": ["Roboto", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-gradient-to-b from-[#470d9d] to-[#907ffc] dark group/design-root overflow-x-hidden">
+<div class="flex flex-1 flex-col items-center justify-center p-4">
+<!-- Success Badge -->
+<div class="flex h-32 w-32 items-center justify-center rounded-full bg-white shadow-lg mb-6">
+<div class="relative flex h-24 w-24 items-center justify-center">
+<span class="material-symbols-outlined text-[96px] text-primary" data-icon="star">star</span>
+<div class="absolute flex h-10 w-10 items-center justify-center rounded-full bg-white" style="bottom: -8px; right: -8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="check_circle">check_circle</span>
+</div>
+</div>
+</div>
+<!-- HeadlineText -->
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-6">Review Submitted!</h1>
+<!-- BodyText -->
+<p class="text-gray-200 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-md">Thank you for your feedback. Your review has been successfully submitted.</p>
+<!-- Card -->
+<div class="p-4 @container w-full max-w-md">
+<div class="flex flex-col items-stretch justify-start rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.2)] bg-white/10 backdrop-blur-sm">
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-5">
+<div class="flex items-center gap-2">
+<span class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">4.5</span>
+<div class="flex">
+<span class="material-symbols-outlined text-yellow-400 text-xl" data-icon="star">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xl" data-icon="star">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xl" data-icon="star">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xl" data-icon="star">star</span>
+<span class="material-symbols-outlined text-yellow-400 text-xl" data-icon="star_half">star_half</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<p class="text-gray-200 text-base font-normal leading-normal">"Very professional and knowledgeable. The best doctor I've ever had..."</p>
+<p class="text-gray-300 text-sm font-normal leading-normal">Submitted: Oct 26, 2023 at 10:15 AM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col items-center pb-6">
+<!-- ButtonGroup -->
+<div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3 w-full">
+<button
+onclick="window.location.href='doctor_profile.html'"
+
+ class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-full">
+<span class="truncate">Back to Doctor Page</span>
+</button>
+<button
+ onclick="window.location.href='write_review.html'"
+ class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-transparent text-white text-base font-bold leading-normal tracking-[0.015em] w-full border-2 border-white">
+<span class="truncate">Write Another Review</span>
+</button>
+</div>
+<!-- Footer Text -->
+<p class="text-gray-300 text-xs text-center px-4 mt-4">Please note: all reviews are screened to ensure they meet our community guidelines before being published.</p>
+</div>
+</div>
+</body></html>
